@@ -78,7 +78,7 @@ class SportsWalking(Training):
     CALORIES_WALK_MULTIPLIER_1 = 0.035  # множитель для расчета калорий
     CALORIES_WALK_MULTIPLIER_2 = 0.029  # множитель для расчета калорий
     SPEED_KMH_TO_MS = 0.278  # для перевода км/ч в м/с
-    M_IN_SM = 100
+    M_IN_SM = 100  # сантиметров в метре
 
     def __init__(self, action: int, duration: float,
                  weight: float, height: float) -> None:
@@ -99,8 +99,8 @@ class SportsWalking(Training):
 
 class Swimming(Training):
     """Тренировка: плавание."""
-    CALORIES_SWIM_MULTIPLIER_1 = 1.1
-    CALORIES_SWIM_MULTIPLIER_2 = 2
+    CALORIES_SWIM_MULTIPLIER_1 = 1.1  # множитель для расчета калорий
+    CALORIES_SWIM_MULTIPLIER_2 = 2  # множитель для расчета калорий
     LEN_STEP = 1.38
 
     def __init__(self, action: float, duration: float, weight: float,
